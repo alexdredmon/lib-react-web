@@ -7,9 +7,8 @@ export const FlexColumnWeb = props => (
       flexDirection: 'column',
       height: '100%',
     }}
-  >
-    { props.children }
-  </div>
+    {...props}
+  />
 )
 
 export default FlexColumnWeb

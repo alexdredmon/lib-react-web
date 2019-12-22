@@ -5,11 +5,12 @@ export const TextWeb = props => {
   const {
     children,
     fontSize=16,
+    style,
   } = props
 
   return (
     <span style={{
-      fontSize: fontSize
+      ...style,
     }}>
       { children }
     </span>

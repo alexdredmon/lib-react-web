@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './styles.css'
+import './styles.css'
 
 
 export const BodyWeb = props => (
