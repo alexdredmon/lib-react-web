@@ -1,18 +1,28 @@
 import React from 'react'
 
-export const FlexCellWeb = props => (
-  <div
-    style={{
-      alignItems: props.alignItems || 'center',
-      flex: 1,
-      display: 'flex',
-      justifyContent: props.justifyContent || 'center',
-      flexDirection: 'column',
-      ...props.style,
-    }}
-  >
-    { props.children }
-  </div>
-)
+export const FlexCellWeb = props => {
+  const {
+    alignItems,
+    justifyContent,
+    style,
+    ...rest
+  } = props
+
+  return (
+    <div
+      style={{
+        alignItems: alignItems || 'center',
+        flex: 1,
+        display: 'flex',
+        justifyContent: justifyContent || 'center',
+        flexDirection: 'column',
+        ...style,
+      }}
+      {...rest}
+    >
+      { props.children }
+    </div>
+  )
+}
 
 export default FlexCellWeb
