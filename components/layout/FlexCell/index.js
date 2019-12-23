@@ -8,6 +8,7 @@ export const FlexCellWeb = props => (
       display: 'flex',
       justifyContent: props.justifyContent || 'center',
       flexDirection: 'column',
+      ...props.style,
     }}
   >
     { props.children }

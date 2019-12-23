@@ -4,7 +4,6 @@ import React from 'react'
 export const TextWeb = props => {
   const {
     children,
-    fontSize=16,
     style,
   } = props
 
