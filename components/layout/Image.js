@@ -4,6 +4,7 @@ import React from 'react'
 export const Image = props => {
   const  {
     alt,
+    srcMobile,
     srcWeb,
     ...rest
   } = props
