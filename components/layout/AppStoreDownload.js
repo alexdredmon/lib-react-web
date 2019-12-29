@@ -12,9 +12,13 @@ export const AppStoreDownload = props => {
     <View {...rest}>
       <a
         href={url}
+        rel="noopener noreferrer"
         target="_blank"
       >
-        <img src="appstore.svg" />
+        <img
+          alt="Download on the App Store"
+          src="appstore.svg"
+        />
       </a>
     </View>
   )
