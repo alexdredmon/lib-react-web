@@ -5,12 +5,20 @@ import './styles.css'
 
 class FlexRow extends React.Component {
   render = () => {
-    const { children, className } = this.props
+    const {
+      children,
+      className,
+      ...rest
+    } = this.props
+
     return (
-      <div className={classNames(
-        'flex-row',
-        className,
-      )}>
+      <div
+        className={classNames(
+          'flex-row',
+          className,
+        )}
+        {...rest}
+      >
         { children }
       </div>
     )
