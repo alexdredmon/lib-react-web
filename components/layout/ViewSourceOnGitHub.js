@@ -27,10 +27,12 @@ export const ViewSourceOnGitHub = props => {
           textDecoration: 'none',
         }}
         target="_blank"
+        rel="noopener noreferrer"
       >
         view source on
         <br />
         <img
+          alt="GitHub"
           src="ghmark.png"
           style={{
             height: 25,
@@ -39,6 +41,7 @@ export const ViewSourceOnGitHub = props => {
           }}
         />
         <img
+          alt="GitHub"
           src="ghlogo.png"
           style={{
             height: 25,
