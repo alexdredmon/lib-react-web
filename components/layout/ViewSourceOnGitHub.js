@@ -14,10 +14,11 @@ export const ViewSourceOnGitHub = props => {
       {...rest}
       style={{
         fontSize: 14,
-        position: 'absolute',
-        bottom: 50,
-        opacity: .5,
-        textAlign: 'center'
+        position: 'relative',
+        opacity: .3,
+        textAlign: 'center',
+        marginTop: '30px',
+        marginBottom: '15px',
       }}
     >
       <a
